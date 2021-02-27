@@ -1,0 +1,9 @@
+{
+  "lang": "en",
+  "short_name": "clicker",
+  "name": "clicker",
+  "description": "Simple app click counter with service worker to sync tabs",
+  "start_url": "/clicker/",
+  "display": "standalone",
+  "scope": "/clicker/"
+}
