@@ -1,0 +1,22 @@
+{
+  "name": "clicker",
+  "version": "1.0.0",
+  "description": "Syncing 2 tabs with service worker",
+  "main": "serviceWorker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faizinkholiq/clicker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faizinkholiq/clicker/issues"
+  },
+  "homepage": "https://github.com/faizinkholiq/clicker#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
