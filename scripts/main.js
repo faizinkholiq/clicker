@@ -27,8 +27,8 @@ window.onload = async () => {
 };
 
 const sendMsgToSW = (data = { msg: "hello" }) => {
+  navigator.serviceWorker.controller.postMessage(data);
   if (navigator.serviceWorker.controller) {
-    navigator.serviceWorker.controller.postMessage(data);
   } else {
     window.location.reload();
   }

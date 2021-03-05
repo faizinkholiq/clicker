@@ -47,7 +47,7 @@ body {
   text-align: center;
   font-size: 22px;
   z-index: 6;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .btn-holder #btn {
