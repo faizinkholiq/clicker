@@ -18,5 +18,10 @@
   "homepage": "https://github.com/faizinkholiq/clicker#readme",
   "devDependencies": {
     "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "connect": "^3.7.0",
+    "http-server": "^0.12.3",
+    "serve-static": "^1.14.1"
   }
 }

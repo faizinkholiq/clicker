@@ -3,9 +3,7 @@ let num = 0;
 window.onload = async () => {
   if ("serviceWorker" in navigator) {
     try {
-      let sw = await navigator.serviceWorker.register("serviceWorker.js", {
-        scope: "/clicker/"
-      });
+      let sw = await navigator.serviceWorker.register("serviceWorker.js");
       console.log(
         "Service worker registration successfull with scope ",
         sw.scope
@@ -27,8 +25,8 @@ window.onload = async () => {
 };
 
 const sendMsgToSW = (data = { msg: "hello" }) => {
-  navigator.serviceWorker.controller.postMessage(data);
   if (navigator.serviceWorker.controller) {
+    navigator.serviceWorker.controller.postMessage(data);
   } else {
     window.location.reload();
   }
